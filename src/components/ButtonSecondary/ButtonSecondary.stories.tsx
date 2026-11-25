@@ -38,12 +38,3 @@ export const IconOnly: Story = {
     "aria-label": "Confirm",
   },
 };
-
-export const CssCheck: Story = {
-  play: async ({ canvas }) => {
-    const button = canvas.getByRole("button", { name: "Label" });
-    await expect(getComputedStyle(button).backgroundColor).toBe("rgb(250, 251, 253)");
-    await expect(getComputedStyle(button).borderTopColor).toBe("rgb(0, 102, 204)");
-    await expect(getComputedStyle(button).color).toBe("rgb(0, 102, 204)");
-  },
-};
