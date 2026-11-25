@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Selawik;
+  src: url("./fonts/Selawik-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* color/background/button/primary/enabled */
+  --color-background-button-primary-enabled: #0066cc;
+  /* color/text/buttons/primary-enabled */
+  --color-text-buttons-primary-enabled: #fafbfd;
+  /* color/icon/buttons/primary-enabled */
+  --color-icon-buttons-primary-enabled: #fafbfd;
+  /* font/text/s */
+  --font-text-s: 11px;
+  /* padding/button/horizontal-gap */
+  --padding-button-horizontal-gap: 8px;
+  /* padding/button/left-right */
+  --padding-button-left-right: 12px;
+  /* padding/button/top-bottom-S */
+  --padding-button-top-bottom-s: 2px;
+  /* corner-radius/button */
+  --corner-radius-button: 8px;
+}
