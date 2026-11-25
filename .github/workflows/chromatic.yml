@@ -1,0 +1,27 @@
+name: Chromatic
+
+on:
+  push:
+    branches: ['**']   # every branch, including main
+  workflow_dispatch:   # adds a manual "Run workflow" button
+
+jobs:
+  chromatic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # Chromatic needs the git history
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Publish to Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitZeroOnChanges: true   # visual changes won't fail the build
