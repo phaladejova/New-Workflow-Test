@@ -21,6 +21,8 @@
   --color-text-buttons-secondary-enabled: #0066cc;
   /* color/icon/buttons/secondary-enabled */
   --color-icon-buttons-secondary-enabled: #0066cc;
+  /* color/icon/buttons/tertiary-enabled */
+  --color-icon-buttons-tertiary-enabled: #0066cc;
   /* font/text/s */
   --font-text-s: 11px;
   /* padding/button/horizontal-gap */
