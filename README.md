@@ -2,7 +2,7 @@
 
 Figma → Cursor → GitHub → Storybook
 
-Primary button from the Allplan 2028 UI Library: Type=Text, Size=S, State=Enabled, Order=icon first.
+Primary and secondary buttons from the Allplan 2028 UI Library: Type=Text, Size=S, State=Enabled, Order=icon first.
 
 The label uses Segoe UI Semibold. Selawik Semibold is included as a metric-compatible fallback when Segoe UI is not installed. Its license is in `src/styles/fonts/OFL.txt`.
 

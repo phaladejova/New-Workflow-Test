@@ -13,6 +13,14 @@
   --color-text-buttons-primary-enabled: #fafbfd;
   /* color/icon/buttons/primary-enabled */
   --color-icon-buttons-primary-enabled: #fafbfd;
+  /* color/background/button/secondary/enabled */
+  --color-background-button-secondary-enabled: #fafbfd;
+  /* color/border/button/secondary/enabled */
+  --color-border-button-secondary-enabled: #0066cc;
+  /* color/text/buttons/secondary-enabled */
+  --color-text-buttons-secondary-enabled: #0066cc;
+  /* color/icon/buttons/secondary-enabled */
+  --color-icon-buttons-secondary-enabled: #0066cc;
   /* font/text/s */
   --font-text-s: 11px;
   /* padding/button/horizontal-gap */
