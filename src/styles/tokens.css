@@ -13,6 +13,36 @@
   --color-text-buttons-primary-enabled: #fafbfd;
   /* color/icon/buttons/primary-enabled */
   --color-icon-buttons-primary-enabled: #fafbfd;
+  /* color/icon/buttons/primary-disabled */
+  --color-icon-buttons-primary-disabled: #e1e5e8;
+  /* color/text/buttons/primary-disabled */
+  --color-text-buttons-primary-disabled: #e1e5e8;
+  /* color/background/button/primary/hovered */
+  --color-background-button-primary-hovered: #004aa4;
+  /* color/background/button/primary/pressed */
+  --color-background-button-primary-pressed: #033a68;
+  /* color/background/button/primary/disabled */
+  --color-background-button-primary-disabled: #a0ceff;
+  /* color/border/button/enabled */
+  --color-border-button-enabled: #0066cc;
+  /* color/border/button/primary/focused mask */
+  --color-border-button-primary-focused-mask: #fafbfd;
+  /* shadow/focused-state/x */
+  --shadow-focused-state-x: 0px;
+  /* shadow/focused-state/y */
+  --shadow-focused-state-y: 0px;
+  /* shadow/focused-state/blur */
+  --shadow-focused-state-blur: 8px;
+  /* shadow/focused-state/spread */
+  --shadow-focused-state-spread: 1px;
+  /* font/text/m */
+  --font-text-m: 12px;
+  /* font/text/body */
+  --font-text-body: 14px;
+  /* padding/button/top-bottom-M */
+  --padding-button-top-bottom-m: 4px;
+  /* padding/button/top-bottom-L */
+  --padding-button-top-bottom-l: 8px;
   /* color/background/button/secondary/enabled */
   --color-background-button-secondary-enabled: #fafbfd;
   /* color/border/button/secondary/enabled */

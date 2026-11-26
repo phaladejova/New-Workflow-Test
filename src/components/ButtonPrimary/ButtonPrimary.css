@@ -24,6 +24,17 @@
   appearance: none;
 }
 
+.button-primary[data-size="M"] {
+  padding-block: var(--padding-button-top-bottom-m);
+  font-size: var(--font-text-m);
+}
+
+.button-primary[data-size="L"] {
+  padding-block: var(--padding-button-top-bottom-l);
+  /* text body/semibold: Segoe UI Semibold, size 14, weight 600 */
+  font-size: var(--font-text-body);
+}
+
 .button-primary::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -33,12 +44,32 @@
   outline: none;
 }
 
-.button-primary:focus-visible {
-  outline: 2px solid #003d7a;
-  outline-offset: 2px;
+.button-primary[data-state="Hovered"],
+.button-primary[data-state="Enabled"]:hover {
+  background: var(--color-background-button-primary-hovered);
 }
 
+.button-primary[data-state="Pressed"],
+.button-primary[data-state="Enabled"]:active {
+  background: var(--color-background-button-primary-pressed);
+}
+
+.button-primary[data-state="Focused"],
+.button-primary[data-state="Enabled"]:focus-visible {
+  background: var(--color-border-button-enabled);
+  /* The 1px focused mask is an inside stroke, so it does not change the box. */
+  box-shadow:
+    inset 0 0 0 1px var(--color-border-button-primary-focused-mask),
+    var(--shadow-focused-state-x) var(--shadow-focused-state-y)
+      var(--shadow-focused-state-blur) var(--shadow-focused-state-spread)
+      var(--color-border-button-enabled);
+}
+
+.button-primary[data-state="Disabled"],
 .button-primary:disabled {
+  background: var(--color-background-button-primary-disabled);
+  color: var(--color-text-buttons-primary-disabled);
+  box-shadow: none;
   cursor: default;
 }
 
@@ -47,15 +78,41 @@
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
+}
+
+.button-primary__icon[data-icon-size="12"] {
   width: 12px;
   height: 12px;
 }
 
+.button-primary__icon[data-icon-size="14"] {
+  width: 14px;
+  height: 14px;
+}
+
+.button-primary__icon[data-icon-size="16"] {
+  width: 16px;
+  height: 16px;
+}
+
 .button-primary__icon img {
   display: block;
+  max-width: none;
+}
+
+.button-primary__icon[data-icon-size="12"] img {
   width: 12px;
   height: 12px;
-  max-width: none;
+}
+
+.button-primary__icon[data-icon-size="14"] img {
+  width: 14px;
+  height: 14px;
+}
+
+.button-primary__icon[data-icon-size="16"] img {
+  width: 16px;
+  height: 16px;
 }
 
 .button-primary__label {
@@ -67,7 +124,6 @@
 }
 
 .button-primary__text {
-  /* text S/semibold: Segoe UI Semibold, size 11, weight 600, line-height 100%, letter-spacing 0 */
   font-weight: 600;
   font-style: normal;
   line-height: 1;
