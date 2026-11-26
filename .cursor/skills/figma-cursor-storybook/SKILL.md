@@ -133,7 +133,7 @@ The token must already be in the environment. An empty token fails the publish. 
 
 ## 6. Keep Chromatic updating from GitHub
 
-Every push publishes Storybook. The workflow that runs is `.github/workflows/chromatic.yml`. A file named `Chromatic` at the repository root does not run. Leave that root file alone unless the designer asks to remove it.
+Every push publishes Storybook. The only workflow GitHub runs is `.github/workflows/chromatic.yml`. Do not add a file named `Chromatic` at the repository root. That file does not run, and it has already been removed.
 
 The workflow must stay:
 
