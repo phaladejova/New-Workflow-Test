@@ -1,10 +1,10 @@
 import type { ButtonHTMLAttributes } from "react";
-import checkLDisabled from "./check-l-disabled.svg";
-import checkL from "./check-l.svg";
-import checkMDisabled from "./check-m-disabled.svg";
-import checkM from "./check-m.svg";
-import checkSDisabled from "./check-s-disabled.svg";
-import checkS from "./check-s.svg";
+import checkLDisabled from "./icons/check-l-disabled.svg";
+import checkL from "./icons/check-l.svg";
+import checkMDisabled from "./icons/check-m-disabled.svg";
+import checkM from "./icons/check-m.svg";
+import checkSDisabled from "./icons/check-s-disabled.svg";
+import checkS from "./icons/check-s.svg";
 import "./ButtonPrimary.css";
 
 export type ButtonPrimarySize = "S" | "M" | "L";

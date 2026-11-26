@@ -71,7 +71,9 @@ export const TextSmallEnabledIconFirst: Story = {
 };
 ```
 
-Use the Figma variant as `name`. The story id used in URLs comes from the export name, not from `name`. `TextSmallEnabledIconFirst` under `Button/Tertiary` is `button-tertiary--text-small-enabled-icon-first`.
+Use the Figma variant as `name` when a component has one story per variant. The story id used in URLs comes from the export name, not from `name`. `TextSmallEnabledIconFirst` under `Button/Tertiary` is `button-tertiary--text-small-enabled-icon-first`.
+
+Button Primary is the exception. Keep a single `Primary` story. Size, state, and order are Controls on that story, not separate sidebar items. Icons live in `src/components/ButtonPrimary/icons/`.
 
 There is already one `CssCheck` story, on the primary button. Do not add a second one.
 
